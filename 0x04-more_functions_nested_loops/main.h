@@ -1,5 +1,5 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef _MAIN_H
+#define _MAIN_H
 
 int _putchar(char c);
 
@@ -59,3 +59,4 @@ void print_number(int n);
 
 int numDigits(int n);
 
+#endif
