@@ -1,17 +1,21 @@
+/*
+ * File: 0-isupper.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
 
 /**
- * _isdigit - input
+ * _isupper - Checks for uppercase characters.
+ * @c: The character to be checked.
  *
- * Description: define if a character is a number
- * @c: charater
- * Return: 1 yes 0 no
+ * Return: 1 if character is uppercase, 0 otherwise.
  */
-
-int _isdigit(int c)
+int _isupper(int c)
 {
-	if (c >= '0' && c <= '9')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
+
 	else
 		return (0);
 }
