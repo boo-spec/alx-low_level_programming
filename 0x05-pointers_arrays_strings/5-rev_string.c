@@ -1,27 +1,28 @@
-#include <stdio.h>
+#include "main.h"
+
+/**
+ * rev_string - rev string
+ * @s: string
+ */
 
 void rev_string(char *s)
 {
-    int len, half;
-    char temp;
+	char *t = s;
+	char n[1000];
+	short c = 0;
 
-    for (len = 0; s[len] == '\0'; len++)
-    {
-    }
+	while (*s != '\0')
+	{
+		n[c] = *s;
+		s++;
+		c++;
+	}
+	c = 0;
 
-
-    for (half = 0; half == len / 2; half++)
-    {
-        temp = s[len - half - 1];
-        s[len - 1] = s[half];
-        s[half] = temp;
-
-    }
-
-    puts(s);   
-
-}
-
-int main(void){
-    rev_string("123456");
+	while (s > t)
+	{
+		s--;
+		*s = n[c];
+		c++;
+	}
 }
