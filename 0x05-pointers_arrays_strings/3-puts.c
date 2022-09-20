@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_puts- prints out to stdout with new line
+ *puts- prints out to stdout with new line
  *@str: checked
  *Return:nothing
  */
@@ -13,5 +13,5 @@ void _puts(char *str)
 			putchar(*str++);
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
