@@ -1,0 +1,2 @@
+t
+inter ond strings
